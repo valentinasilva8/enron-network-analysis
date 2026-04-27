@@ -1,0 +1,93 @@
+{
+  "validation": {
+    "total_email_files_scanned": "1000",
+    "successfully_parsed": "985",
+    "successfully_parsed_pct": "98.5",
+    "failed_to_parse_dropped": "15",
+    "failed_to_parse_dropped_pct": "1.5",
+    "no_recipients": "1",
+    "malformed_headers": "0",
+    "encoding_errors": "0",
+    "unique_message_ids": "985",
+    "duplicates_removed": "0",
+    "average_recipients_per_email": "1.4923857868020305",
+    "emails_dropped_over_10_recipients": "14",
+    "emails_dropped_over_10_recipients_pct": "1.4000000000000001",
+    "total_edges_before_aggregation": "899",
+    "total_edges_after_aggregation": "266",
+    "edges_dropped_weight_lt_2": "86",
+    "edges_dropped_weight_lt_2_pct": "32.33082706766917",
+    "edges_retained_weight_ge_2": "180",
+    "unique_users_before_filter": "465",
+    "unique_users_after_enron_filter": "233",
+    "date_range_start": "1999-06-01 13:36:00+00:00",
+    "date_range_end": "2002-02-28 14:11:51+00:00"
+  },
+  "sanity": {
+    "top_10_senders": {
+      "rosalee.fleming@enron.com": 355,
+      "b..sanders@enron.com": 322,
+      "richard.sanders@enron.com": 72,
+      "robert.benson@enron.com": 24,
+      "tori.wells@enron.com": 20,
+      "kenneth.lay@enron.com": 16,
+      "twanda.sweet@enron.com": 4
+    },
+    "edge_samples": [
+      {
+        "sender": "rosalee.fleming@enron.com",
+        "receiver": "kayla.ruiz@enron.com",
+        "weight": 8
+      },
+      {
+        "sender": "b..sanders@enron.com",
+        "receiver": "bonnie.white@enron.com",
+        "weight": 4
+      },
+      {
+        "sender": "kenneth.lay@enron.com",
+        "receiver": "cindy.olson@enron.com",
+        "weight": 2
+      },
+      {
+        "sender": "b..sanders@enron.com",
+        "receiver": "mark.palmer@enron.com",
+        "weight": 3
+      },
+      {
+        "sender": "twanda.sweet@enron.com",
+        "receiver": "cliff.baxter@enron.com",
+        "weight": 2
+      },
+      {
+        "sender": "rosalee.fleming@enron.com",
+        "receiver": "katherine.brown@enron.com",
+        "weight": 12
+      },
+      {
+        "sender": "richard.sanders@enron.com",
+        "receiver": "andrew.edison@enron.com",
+        "weight": 7
+      },
+      {
+        "sender": "b..sanders@enron.com",
+        "receiver": "elizabeth.sager@enron.com",
+        "weight": 4
+      },
+      {
+        "sender": "rosalee.fleming@enron.com",
+        "receiver": "eric.thode@enron.com",
+        "weight": 2
+      },
+      {
+        "sender": "b..sanders@enron.com",
+        "receiver": "julia.murray@enron.com",
+        "weight": 2
+      }
+    ],
+    "total_nodes": 166,
+    "core_mailbox_users_found": 166,
+    "largest_component_pct": 95.78313253012048,
+    "isolated_nodes": 0
+  }
+}

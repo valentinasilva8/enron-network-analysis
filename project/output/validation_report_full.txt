@@ -1,0 +1,48 @@
+=== PREPROCESSING VALIDATION REPORT ===
+Total email files scanned:        126590
+Successfully parsed:              121726  (96.16%)
+Failed to parse (dropped):        4864  (3.84%)
+  - No recipients:                292
+  - Malformed headers:            0
+  - Encoding errors:              0
+Unique Message-IDs:               121726
+Duplicates removed:               0
+Average recipients per email:     1.73
+Emails dropped (>10 recipients):  4572  (3.61%)
+Total edges (before aggregation): 167281
+Total edges (after aggregation):  19193
+Edges dropped (weight < 2):       5566  (29.00%)
+Edges retained (weight >= 2):     13627
+Unique users (before filtering):  13550
+Unique users (after @enron filter): 6382
+Date range:                       1998-10-30T15:43:00+00:00 to 2002-07-12T08:31:00+00:00
+
+=== SANITY CHECK: TOP 10 SENDERS ===
+- kay.mann@enron.com: 11650
+- vince.kaminski@enron.com: 11469
+- chris.germany@enron.com: 9026
+- tana.jones@enron.com: 8456
+- jeff.dasovich@enron.com: 6802
+- sara.shackleton@enron.com: 6769
+- drew.fossum@enron.com: 4358
+- eric.bass@enron.com: 3817
+- sally.beck@enron.com: 3436
+- gerald.nemec@enron.com: 3249
+
+=== SANITY CHECK: EDGE SAMPLE ===
+- sally.beck@enron.com -> mike.wellings@enron.com (weight=2)
+- jim.schwieger@enron.com -> 40enron@enron.com (weight=4)
+- marie.heard@enron.com -> joanne.rozycki@enron.com (weight=8)
+- hunter.shively@enron.com -> benn@enron.com (weight=2)
+- liz.taylor@enron.com -> ginger.dernehl@enron.com (weight=4)
+- jim.schwieger@enron.com -> adrianne.engler@enron.com (weight=3)
+- susan.scott@enron.com -> keith.petersen@enron.com (weight=10)
+- robin.rodrigue@enron.com -> debbie.brackett@enron.com (weight=4)
+- jim.schwieger@enron.com -> j..legler@enron.com (weight=12)
+- susan.scott@enron.com -> tom.wilbeck@enron.com (weight=2)
+
+=== SANITY CHECK: GRAPH PLAUSIBILITY ===
+- Total nodes: 4996
+- Core mailbox users found: 149 / 150
+- Largest connected component: 99.70% of nodes
+- Isolated nodes: 0

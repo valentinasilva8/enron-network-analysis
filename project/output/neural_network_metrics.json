@@ -1,0 +1,51 @@
+{
+  "label_definition": "high_influence = 1 if PageRank >= top 20% OR betweenness >= top 20%",
+  "features_used": [
+    "in_degree",
+    "out_degree",
+    "weighted_degree",
+    "clustering_coefficient",
+    "closeness_centrality",
+    "community_size"
+  ],
+  "train_size": 3747,
+  "test_size": 1249,
+  "class_distribution_train": {
+    "high_influence_1": 1112,
+    "not_high_influence_0": 2635
+  },
+  "mlp": {
+    "model": "MLPClassifier",
+    "accuracy": 0.8526821457165733,
+    "precision": 0.8251748251748252,
+    "recall": 0.6378378378378379,
+    "f1": 0.7195121951219512,
+    "confusion_matrix": [
+      [
+        829,
+        50
+      ],
+      [
+        134,
+        236
+      ]
+    ]
+  },
+  "baseline_rf": {
+    "model": "RandomForest_Baseline",
+    "accuracy": 0.910328262610088,
+    "precision": 0.8623595505617978,
+    "recall": 0.8297297297297297,
+    "f1": 0.8457300275482094,
+    "confusion_matrix": [
+      [
+        830,
+        49
+      ],
+      [
+        63,
+        307
+      ]
+    ]
+  }
+}

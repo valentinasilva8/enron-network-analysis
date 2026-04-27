@@ -1,0 +1,45 @@
+=== PREPROCESSING VALIDATION REPORT ===
+Total email files scanned:        1000
+Successfully parsed:              985  (98.50%)
+Failed to parse (dropped):        15  (1.50%)
+  - No recipients:                1
+  - Malformed headers:            0
+  - Encoding errors:              0
+Unique Message-IDs:               985
+Duplicates removed:               0
+Average recipients per email:     1.49
+Emails dropped (>10 recipients):  14  (1.40%)
+Total edges (before aggregation): 899
+Total edges (after aggregation):  266
+Edges dropped (weight < 2):       86  (32.33%)
+Edges retained (weight >= 2):     180
+Unique users (before filtering):  465
+Unique users (after @enron filter): 233
+Date range:                       1999-06-01T13:36:00+00:00 to 2002-02-28T14:11:51+00:00
+
+=== SANITY CHECK: TOP 10 SENDERS ===
+- rosalee.fleming@enron.com: 355
+- b..sanders@enron.com: 322
+- richard.sanders@enron.com: 72
+- robert.benson@enron.com: 24
+- tori.wells@enron.com: 20
+- kenneth.lay@enron.com: 16
+- twanda.sweet@enron.com: 4
+
+=== SANITY CHECK: EDGE SAMPLE ===
+- rosalee.fleming@enron.com -> kayla.ruiz@enron.com (weight=8)
+- b..sanders@enron.com -> bonnie.white@enron.com (weight=4)
+- kenneth.lay@enron.com -> cindy.olson@enron.com (weight=2)
+- b..sanders@enron.com -> mark.palmer@enron.com (weight=3)
+- twanda.sweet@enron.com -> cliff.baxter@enron.com (weight=2)
+- rosalee.fleming@enron.com -> katherine.brown@enron.com (weight=12)
+- richard.sanders@enron.com -> andrew.edison@enron.com (weight=7)
+- b..sanders@enron.com -> elizabeth.sager@enron.com (weight=4)
+- rosalee.fleming@enron.com -> eric.thode@enron.com (weight=2)
+- b..sanders@enron.com -> julia.murray@enron.com (weight=2)
+
+=== SANITY CHECK: GRAPH PLAUSIBILITY ===
+- Total nodes: 166
+- Core mailbox users found: 166 / 150
+- Largest connected component: 95.78% of nodes
+- Isolated nodes: 0

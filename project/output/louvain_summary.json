@@ -1,0 +1,8 @@
+{
+  "modularity": 0.7422224491247007,
+  "num_communities": 18,
+  "largest_community_size": 821,
+  "smallest_community_size": 2,
+  "median_community_size": 253,
+  "stability_majority_agreement_pct": 73.69895916733387
+}

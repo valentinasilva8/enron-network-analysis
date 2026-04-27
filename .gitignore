@@ -1,0 +1,25 @@
+# Ignore everything by default (workspace root contains 150 raw mailbox dirs)
+/*
+
+# Whitelist project directories and root files
+!.gitignore
+!README.md
+!project/
+!docs/
+!slides/
+!notebooks/
+
+# Inside project: ignore heavy intermediates
+project/output/*.parquet
+project/__pycache__/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+
+# OS / IDE
+.DS_Store
+.env
+.ipynb_checkpoints/

@@ -1,0 +1,8 @@
+pandas
+networkx
+python-louvain
+scikit-learn
+matplotlib
+seaborn
+tqdm
+pyarrow

@@ -1,0 +1,96 @@
+{
+  "validation": {
+    "total_email_files_scanned": "126590",
+    "successfully_parsed": "121726",
+    "successfully_parsed_pct": "96.1576743818627",
+    "failed_to_parse_dropped": "4864",
+    "failed_to_parse_dropped_pct": "3.842325618137293",
+    "no_recipients": "292",
+    "malformed_headers": "0",
+    "encoding_errors": "0",
+    "unique_message_ids": "121726",
+    "duplicates_removed": "0",
+    "average_recipients_per_email": "1.7348553308249675",
+    "emails_dropped_over_10_recipients": "4572",
+    "emails_dropped_over_10_recipients_pct": "3.611659688758986",
+    "total_edges_before_aggregation": "167281",
+    "total_edges_after_aggregation": "19193",
+    "edges_dropped_weight_lt_2": "5566",
+    "edges_dropped_weight_lt_2_pct": "29.000156306986923",
+    "edges_retained_weight_ge_2": "13627",
+    "unique_users_before_filter": "13550",
+    "unique_users_after_enron_filter": "6382",
+    "date_range_start": "1998-10-30 15:43:00+00:00",
+    "date_range_end": "2002-07-12 08:31:00+00:00"
+  },
+  "sanity": {
+    "top_10_senders": {
+      "kay.mann@enron.com": 11650,
+      "vince.kaminski@enron.com": 11469,
+      "chris.germany@enron.com": 9026,
+      "tana.jones@enron.com": 8456,
+      "jeff.dasovich@enron.com": 6802,
+      "sara.shackleton@enron.com": 6769,
+      "drew.fossum@enron.com": 4358,
+      "eric.bass@enron.com": 3817,
+      "sally.beck@enron.com": 3436,
+      "gerald.nemec@enron.com": 3249
+    },
+    "edge_samples": [
+      {
+        "sender": "sally.beck@enron.com",
+        "receiver": "mike.wellings@enron.com",
+        "weight": 2
+      },
+      {
+        "sender": "jim.schwieger@enron.com",
+        "receiver": "40enron@enron.com",
+        "weight": 4
+      },
+      {
+        "sender": "marie.heard@enron.com",
+        "receiver": "joanne.rozycki@enron.com",
+        "weight": 8
+      },
+      {
+        "sender": "hunter.shively@enron.com",
+        "receiver": "benn@enron.com",
+        "weight": 2
+      },
+      {
+        "sender": "liz.taylor@enron.com",
+        "receiver": "ginger.dernehl@enron.com",
+        "weight": 4
+      },
+      {
+        "sender": "jim.schwieger@enron.com",
+        "receiver": "adrianne.engler@enron.com",
+        "weight": 3
+      },
+      {
+        "sender": "susan.scott@enron.com",
+        "receiver": "keith.petersen@enron.com",
+        "weight": 10
+      },
+      {
+        "sender": "robin.rodrigue@enron.com",
+        "receiver": "debbie.brackett@enron.com",
+        "weight": 4
+      },
+      {
+        "sender": "jim.schwieger@enron.com",
+        "receiver": "j..legler@enron.com",
+        "weight": 12
+      },
+      {
+        "sender": "susan.scott@enron.com",
+        "receiver": "tom.wilbeck@enron.com",
+        "weight": 2
+      }
+    ],
+    "total_nodes": 4996,
+    "core_mailbox_users_found": 149,
+    "largest_component_pct": 99.69975980784628,
+    "isolated_nodes": 0
+  }
+}
