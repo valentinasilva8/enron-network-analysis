@@ -63,6 +63,44 @@ def plot_post_degree_distribution(undirected_graph: nx.Graph, output_dir: Path) 
     _save_fig(output_dir, "post_degree_distribution_loglog.png")
 
 
+def plot_preprocessing_funnel(output_dir: Path) -> None:
+    """Post-preprocessing visualization: data attrition funnel across pipeline stages."""
+    import matplotlib.ticker as mticker
+
+    stages = [
+        ("Raw email files scanned",       126590, ""),
+        ("Successfully parsed",            121726, "−3.8% parse failures dropped"),
+        ("After broadcast drop (≤10)",    117154, "−3.6% broadcast noise removed"),
+        ("Internal @enron.com pairs",      167281, "↑ edge expansion (1 email → multiple pairs)"),
+        ("After aggregation",              19193,  "−88.5% one-off pairs collapsed"),
+        ("Edges retained (weight ≥ 2)",   13627,  "−29.0% weak ties removed (weight < 2)"),
+        ("Final graph nodes",              4996,   "final analysis network"),
+    ]
+
+    labels = [s[0] for s in stages]
+    values = [s[1] for s in stages]
+    notes  = [s[2] for s in stages]
+    max_val = max(values)
+
+    palette = sns.color_palette("Blues_d", len(stages))
+    fig, ax = plt.subplots(figsize=(11, 6))
+    ax.barh(labels[::-1], values[::-1], color=palette, height=0.6)
+
+    for i, (val, note) in enumerate(zip(reversed(values), reversed(notes))):
+        ann = f"  {val:,}   {note}" if note else f"  {val:,}"
+        ax.text(val + max_val * 0.005, i, ann,
+                va="center", ha="left", fontsize=8.5, color="#333333")
+
+    ax.set_xscale("log")
+    ax.set_xlabel("Count (log scale)", fontsize=11)
+    ax.set_title("Preprocessing Pipeline — Data Attrition at Each Stage",
+                 fontsize=13, fontweight="bold")
+    ax.xaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{int(x):,}"))
+    ax.set_xlim(right=max_val * 8)
+    ax.tick_params(axis="y", labelsize=10)
+    _save_fig(output_dir, "result_preprocessing_funnel.png")
+
+
 def plot_post_edge_weight_distribution(edges_df: pd.DataFrame, output_dir: Path) -> None:
     """Post-preprocessing visualization: distribution of aggregated edge weights."""
     plt.figure(figsize=(7, 5))
