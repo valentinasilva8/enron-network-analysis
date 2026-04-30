@@ -64,10 +64,6 @@ slides/                    # Presentation (.pptx + outline)
 notebooks/                 # Summary Jupyter notebook
 ```
 
-## Team
-
-- [Fill in names]
-
 ## References
 
 - Klimt, B., & Yang, Y. (2004). Introducing the Enron corpus. In *CEAS 2004*.
